@@ -8,6 +8,7 @@ class MyFrame(wx.Frame):
         box = wx.BoxSizer()
         tc1 = wx.TextCtrl(panel, style=wx.TE_CENTER)
         tc2 = wx.TextCtrl(panel, style=wx.TE_MULTILINE | wx.TE_NO_VSCROLL | wx.TE_PROCESS_ENTER)
+        #tc2.SetBackgroundColour('#ffee55')
         tc2.Bind(wx.EVT_TEXT_ENTER, self.onText)
         box.Add(tc1)
         box.Add(tc2)
