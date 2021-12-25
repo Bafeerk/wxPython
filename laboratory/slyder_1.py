@@ -36,7 +36,7 @@ class MyFrame(wx.Frame):
         id = e.GetEventObject().GetId()
         if id == ID_RED:
             self.color.Set(val, g, b)
-            font = r + g + val
+            font = val + g + b
         elif id == ID_GREEN:
             self.color.Set(r, val, b)
             font = r + val + b
